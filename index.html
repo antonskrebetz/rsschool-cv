@@ -1,71 +1,137 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend developer CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
-    <header class="page-header">
-      <div class="page-header__image-box">
-        <img src="https://sun2.beltelecom-by-minsk.userapi.com/c846121/v846121979/f4ed8/cLIsRya_NZs.jpg" alt="avatar">
-      </div>
-      <div class="page-header__wrapper">
-        <h1 class="page-header__title">Anton Skrebetz</h1>
-        <p class="page-header__paragraph">Junior Frontend Developer</p>
-      </div>
+    <title>Anton Skrebetz CV</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header_nav">
+                    <a class="nav_item" href="#skills">Skills</a>
+                    <a class="nav_item" href="#contacts">Contacts</a>
+            </nav>
+            <div class="header_titles">
+                <h1 class="header_title">Anton Skrebetz</h1>
+                <h2 class="header_suptitle">Born to be... a Front-End developer</h2>
+            </div>
+        </div>
     </header>
 
-    <main class="page-main">
-      <section class="contacts">
-        <h2 class="title">Contacts:</h2>
-        <ul>
-            <li><b>Phone number:</b></li>
-            <li>+375(29) 820 32 36</li>
-            <li><b>Email: </b></li>
-            <li>antonskrebetz@gmail.com</li>
-        </ul>
-        <p></p>
-      </section>
+    <main>
+        <div class="container">
+            <section class="about section">
+                <h3 class="section_title">About</h3>
+                <p class="about_text">I was born and live in Brest, Belarus. I have a higher education in marketing. I was working in this area for a long time. For two last years I have been working in a real estate agency, where interesting projects have been implemented, one of which is virtual tours. At the moment I am very interested in learning programming. This is an interesting and promising and promising development path for me. I like and enjoy it!</p>
+            </section>
 
-      <section class="skills">
-        <h2 class="title">Skills:</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Less/Sass</li>
-          <li>Git</li>
-        </ul>
-      </section>
+            <section class="education section">
+                <h3 class="section_title">Education</h3>
+                    <ul class="educations">
+                        <li class="educations_item edu_main">Brest State Technical University<br>
+                        <li class="educations_item">Faculty of Economics, marketing</li> 
+                        <li class="educations_item">2010 – 2014</li>
+                        <li class="educations_item edu_main">Programming</li>
+                        <li class="educations_item">HTML Academy</li>
+                        <li class="educations_item">YouTube</li>
+                        <li class="educations_item">Udemy</li>
+                        <li class="educations_item">learn.javasript</li>
+                    </ul>
+            </section>
 
-      <section class="education">
-        <h2 class="title">Education:</h2>
-        <ul>
-            <li>HTMLAcademy courses</li>
-            <li>Self-education</li>
-        </ul>
-      </section>
+            <section class="languages section">
+                <h3 class="section_title">Languages</h3>
+                    <ul class="languages_text">
+                        <li>Russian</li>
+                        <li>English - A2+</li>
+                    </ul>
+            </section>
 
-      <section class="english">
-        <h2 class="title">English:</h2>
-        <p>Level A2+</p>
-      </section>
+            <section class="skills section" id="skills">
+                <h3 class="section_title">Skills</h3>
+                <ul class="skills_content">
+                    <li class="skills_item">
+                        <p class="skills_item_title">HTML</p>
+                        <img class="skills_icon" src="img/skills/html-5.svg" alt="html">
+                    </li>
+                    <li class="skills_item">
+                        <p class="skills_item_title">CSS</p>
+                        <img class="skills_icon" src="img/skills/css-3.svg" alt="css">
+                    </li>
+                    <li class="skills_item">
+                        <p class="skills_item_title">JavaScript</p>
+                        <img class="skills_icon" src="img/skills/javascript-seeklogo.com.svg" alt="JavaScript">
+                    </li>
+                    <li class="skills_item">
+                        <p class="skills_item_title">BootStrap</p>
+                        <img class="skills_icon" src="img/skills/bootstrap-5-1.svg" alt="BootStrap">
+                    </li>
+                    <li class="skills_item">
+                        <p class="skills_item_title">jQuery</p>
+                        <img class="skills_icon" src="img/skills/jquery.svg" alt="jQuery">
+                    </li>
+                    <li class="skills_item">
+                        <p class="skills_item_title">GitHub</p>
+                        <img class="skills_icon" src="img/skills/github.svg" alt="GitHub">
+                    </li>
+                </ul>
+            </section>
 
-      <section class="hobby">
-        <h2 class="title">Hobby:</h2>
-        <ul>
-          <li>Snowboarding</li>
-          <li>Rollerblading</li>
-          <li>Gym</li>
-        </ul>
-      </section>
+            <section class="code section">
+                <h3 class="section_title">Code</h3>
+                <pre>
+                    <code>
+function createDreamTeam(members) {<br>
+    if (!Array.isArray(members)) {
+        return false;
+    }
+    let name = [];
+    for (letter of members) {
+        if (typeof(letter) == 'string')
+        name.push(letter.trim()[0].toUpperCase());
+    }
+    return name.sort().join('');
+};
+                    </code>
+                </pre>
+            </section>
+
+            <section class="contact section" id="contacts">
+                <h3 class="section_title">Contacts</h3>
+                <ul class="contacts">
+                    <li class="contacts_item">
+                        <a href="https://telegram.me/antonskrebetz">
+                            <img class="contacts_icon" src="img/social/telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                    <li class="contacts_item">
+                        <a href="https://github.com/antonskrebetz">
+                            <img class="contacts_icon" src="img/social/github.svg" alt="github">
+                        </a>
+
+                    </li>
+                    <li class="contacts_item">
+                        <a href="skype:anton.skrebez?chat">
+                            <img class="contacts_icon" src="img/social/skype.svg" alt="skype">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 
-    <footer class="page-footer">
-      <p class="copyright">© i want to be a frontend developoer ;) with love from Brest ♥</p>
+    <footer>
+        <ul class="footer">
+            <li class="footer_item">RSSchool</li>
+            <li class="footer_item">2021</li>
+            <li class="footer_item">Front-End</li>
+        </ul>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
