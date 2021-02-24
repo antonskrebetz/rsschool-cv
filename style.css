@@ -1,0 +1,180 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header {
+  margin-bottom: 80px;
+  height: 100vh;
+  background: url("img/WBIM8470.JPG") no-repeat 30% / cover;
+}
+
+.header_nav {
+  padding-top: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_item {
+  margin-left: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  transition: all 0.4s linear;
+}
+
+.nav_item:hover {
+  color: #ffa501;
+  text-decoration: underline;
+}
+
+.header_titles {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header_title {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.header_suptitle {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 35px;
+}
+
+.header_img {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section_title {
+  margin-bottom: 20px;
+  max-width: 450px;
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  transition: all 0.4s linear;
+}
+
+.section_title:hover {
+  color: #ffa501;
+}
+
+.edu_main {
+  margin-top: 20px;
+  color: #ffa501;
+  text-decoration: underline;
+}
+
+.skills_content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills_item {
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ffa501;
+}
+
+.skills_icon {
+  width: 50%;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts_item {
+  margin-right: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.contacts_item:after {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #ffa501;
+}
+
+.contacts_item:hover::after {
+  display: block;
+}
+
+.contacts_item:last-child {
+  margin-right: 0;
+}
+
+.contacts_icon {
+  display: block;
+  width: 100%;
+  transition: all 0.4s linear;
+}
+
+.footer {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.footer_item {
+  margin-right: 30px;
+}
+
+.footer_item:last-child {
+  margin-right: 0;
+}
